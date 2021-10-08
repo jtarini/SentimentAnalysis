@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Debug</key>
+    <dict>
+      <key>TwitterApiUrl</key>
+      <string>https://api.twitter.com</string>
+      <key>TwitterApiBearerToken</key>
+      <string>AAAAAAAAAAAAAAAAAAAAAJrdUQEAAAAADOo5a0fi2lNB56g2Qdufc3mA0Zw%3D9SGEVIWwwD7emPyFL4qzh8hVamGfzY4I9uFShQIjfndE18AqhS</string>
+      <key>GoogleCloudApiUrl</key>
+      <string>https://language.googleapis.com</string>
+      <key>GoogleCloudApiKey</key>
+      <string>AIzaSyBfHUYnr8kyWOYfi9J-rbqmnQOTuaZNtOY</string>
+    </dict>
+    <key>Release</key>
+    <dict>
+      <key>TwitterApiUrl</key>
+      <string>https://api.twitter.com</string>
+      <key>TwitterApiBearerToken</key>
+      <string>AAAAAAAAAAAAAAAAAAAAAJrdUQEAAAAADOo5a0fi2lNB56g2Qdufc3mA0Zw%3D9SGEVIWwwD7emPyFL4qzh8hVamGfzY4I9uFShQIjfndE18AqhS</string>
+      <key>GoogleCloudApiUrl</key>
+      <string>https://language.googleapis.com</string>
+      <key>GoogleCloudApiKey</key>
+      <string>AIzaSyBfHUYnr8kyWOYfi9J-rbqmnQOTuaZNtOY</string>
+    </dict>
+  </dict>
+</plist>
