@@ -5,16 +5,11 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'SentimentAnalysis' do
-  use_frameworks!
+  pod 'Moya-ObjectMapper/RxSwift'
+  pod 'Swinject'
+  pod 'DZNEmptyDataSet'
 
   target 'SentimentAnalysisTests' do
-    inherit! :search_paths
-    pod 'Moya-ObjectMapper/RxSwift'
-    pod 'Swinject'
-    pod 'DZNEmptyDataSet'
-  end
-
-  target 'SentimentAnalysisUITests' do
     inherit! :search_paths
     pod 'RxBlocking'
   end
