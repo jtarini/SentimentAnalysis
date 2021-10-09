@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7B0D776D2710B12500B9831E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D776C2710B12500B9831E /* AppDelegate.swift */; };
-		7B0D776F2710B12500B9831E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D776E2710B12500B9831E /* SceneDelegate.swift */; };
 		7B0D77712710B12500B9831E /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77702710B12500B9831E /* SearchUserViewController.swift */; };
 		7B0D77762710B12700B9831E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77752710B12700B9831E /* Assets.xcassets */; };
 		7B0D77792710B12700B9831E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77772710B12700B9831E /* LaunchScreen.storyboard */; };
-		7B0D77842710B12700B9831E /* SentimentAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77832710B12700B9831E /* SentimentAnalysisTests.swift */; };
-		7B0D778E2710B12700B9831E /* SentimentAnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D778D2710B12700B9831E /* SentimentAnalysisUITests.swift */; };
-		7B0D77902710B12700B9831E /* SentimentAnalysisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D778F2710B12700B9831E /* SentimentAnalysisUITestsLaunchTests.swift */; };
-		7B0D77A32710B2A300B9831E /* Localizabble.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77A52710B2A300B9831E /* Localizabble.strings */; };
 		7B0D77A82710B6C300B9831E /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77A72710B6C300B9831E /* Configuration.plist */; };
 		7B0D77AD2710BA4700B9831E /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77AC2710BA4700B9831E /* ConfigurationManager.swift */; };
 		7B0D77AF2710BA6600B9831E /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77AE2710BA6600B9831E /* Configs.swift */; };
@@ -23,9 +18,26 @@
 		7B0D77B42710BC3400B9831E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77B32710BC3400B9831E /* Coordinator.swift */; };
 		7B0D77B62710BC5100B9831E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77B52710BC5100B9831E /* MainCoordinator.swift */; };
 		7B0D77C42710CB6300B9831E /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77C32710CB6300B9831E /* TweetsViewController.swift */; };
-		80510FF85B813006EA517823 /* Pods_SentimentAnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3542CF2CDD60315B1C18C43C /* Pods_SentimentAnalysisTests.framework */; };
+		7B0D77C72710EBB600B9831E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77C62710EBB600B9831E /* User.swift */; };
+		7B0D77C92710ECEB00B9831E /* TwitterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77C82710ECEB00B9831E /* TwitterApi.swift */; };
+		7B0D77CB2710EE0500B9831E /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77CA2710EE0500B9831E /* Tweet.swift */; };
+		7B0D77CD2710EE7F00B9831E /* Sentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77CC2710EE7F00B9831E /* Sentiment.swift */; };
+		7B0D77CF2710F4A400B9831E /* TwitterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77CE2710F4A400B9831E /* TwitterRepository.swift */; };
+		7B0D77D12710F67500B9831E /* GetUserByUsernameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77D02710F67500B9831E /* GetUserByUsernameUseCase.swift */; };
+		7B0D77D32710F90900B9831E /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77D22710F90900B9831E /* SearchUserViewModel.swift */; };
+		7B0D77D52711A07900B9831E /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77D42711A07900B9831E /* RepositoryAssembly.swift */; };
+		7B0D77D72711A0D400B9831E /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77D62711A0D400B9831E /* UseCaseAssembly.swift */; };
+		7B0D77D92711A11E00B9831E /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77D82711A11E00B9831E /* ViewModelAssembly.swift */; };
+		7B0D77DB2711A16400B9831E /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77DA2711A16400B9831E /* ViewControllerAssembly.swift */; };
+		7B0D77DE2711A3BA00B9831E /* getUserByUsername.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77DC2711A3BA00B9831E /* getUserByUsername.json */; };
+		7B0D77DF2711A3BA00B9831E /* getTweetsByUserId.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77DD2711A3BA00B9831E /* getTweetsByUserId.json */; };
+		7B0D77E22711A4FB00B9831E /* TwitterRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77E12711A4FB00B9831E /* TwitterRepositoryTests.swift */; };
+		7B0D77E52711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77E42711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift */; };
+		7B0D77E72711BF9900B9831E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77E62711BF9900B9831E /* BaseViewController.swift */; };
+		7B0D77E92711C5A700B9831E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77E82711C5A700B9831E /* BaseViewModel.swift */; };
+		7B0D77EE2711D1D200B9831E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77F02711D1D200B9831E /* Localizable.strings */; };
 		9CC546372BFA8D382D66E3E1 /* Pods_SentimentAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA725E106B25A7550960F51 /* Pods_SentimentAnalysis.framework */; };
-		F0711EA11727763C5B3DDA49 /* Pods_SentimentAnalysisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E479E0B751E0B82DD024D17D /* Pods_SentimentAnalysisUITests.framework */; };
+		FB2874EE41D30576E5868504 /* Pods_SentimentAnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047D243BFE1E7F28E0145C46 /* Pods_SentimentAnalysisTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,34 +48,20 @@
 			remoteGlobalIDString = 7B0D77682710B12500B9831E;
 			remoteInfo = SentimentAnalysis;
 		};
-		7B0D778A2710B12700B9831E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7B0D77612710B12500B9831E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B0D77682710B12500B9831E;
-			remoteInfo = SentimentAnalysis;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CD8781AE16301862970A139 /* Pods-SentimentAnalysisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysisUITests.release.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysisUITests/Pods-SentimentAnalysisUITests.release.xcconfig"; sourceTree = "<group>"; };
-		3542CF2CDD60315B1C18C43C /* Pods_SentimentAnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D243BFE1E7F28E0145C46 /* Pods_SentimentAnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E227A707C6F6C6131D0A0FB /* Pods-SentimentAnalysis-SentimentAnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysis-SentimentAnalysisTests.debug.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysis-SentimentAnalysisTests/Pods-SentimentAnalysis-SentimentAnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CD25C4C3929F707A18415C1 /* Pods-SentimentAnalysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysis.release.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysis/Pods-SentimentAnalysis.release.xcconfig"; sourceTree = "<group>"; };
-		5BA0F5653BB7035449635F70 /* Pods-SentimentAnalysisUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysisUITests.debug.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysisUITests/Pods-SentimentAnalysisUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76892EE8C57A7D7F839CA2E7 /* Pods-SentimentAnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysisTests.debug.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysisTests/Pods-SentimentAnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B0D77692710B12500B9831E /* SentimentAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentimentAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0D776C2710B12500B9831E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B0D776E2710B12500B9831E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B0D77702710B12500B9831E /* SearchUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
 		7B0D77752710B12700B9831E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B0D77782710B12700B9831E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B0D777A2710B12700B9831E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B0D777F2710B12700B9831E /* SentimentAnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentAnalysisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0D77832710B12700B9831E /* SentimentAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisTests.swift; sourceTree = "<group>"; };
-		7B0D77892710B12700B9831E /* SentimentAnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SentimentAnalysisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B0D778D2710B12700B9831E /* SentimentAnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisUITests.swift; sourceTree = "<group>"; };
-		7B0D778F2710B12700B9831E /* SentimentAnalysisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7B0D77A42710B2A300B9831E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizabble.strings; sourceTree = "<group>"; };
 		7B0D77A72710B6C300B9831E /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		7B0D77AC2710BA4700B9831E /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		7B0D77AE2710BA6600B9831E /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
@@ -71,10 +69,28 @@
 		7B0D77B32710BC3400B9831E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7B0D77B52710BC5100B9831E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		7B0D77C32710CB6300B9831E /* TweetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
+		7B0D77C62710EBB600B9831E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7B0D77C82710ECEB00B9831E /* TwitterApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterApi.swift; sourceTree = "<group>"; };
+		7B0D77CA2710EE0500B9831E /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		7B0D77CC2710EE7F00B9831E /* Sentiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment.swift; sourceTree = "<group>"; };
+		7B0D77CE2710F4A400B9831E /* TwitterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterRepository.swift; sourceTree = "<group>"; };
+		7B0D77D02710F67500B9831E /* GetUserByUsernameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserByUsernameUseCase.swift; sourceTree = "<group>"; };
+		7B0D77D22710F90900B9831E /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
+		7B0D77D42711A07900B9831E /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		7B0D77D62711A0D400B9831E /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		7B0D77D82711A11E00B9831E /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		7B0D77DA2711A16400B9831E /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		7B0D77DC2711A3BA00B9831E /* getUserByUsername.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getUserByUsername.json; sourceTree = "<group>"; };
+		7B0D77DD2711A3BA00B9831E /* getTweetsByUserId.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTweetsByUserId.json; sourceTree = "<group>"; };
+		7B0D77E12711A4FB00B9831E /* TwitterRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterRepositoryTests.swift; sourceTree = "<group>"; };
+		7B0D77E42711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserByUsernameUseCaseTests.swift; sourceTree = "<group>"; };
+		7B0D77E62711BF9900B9831E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7B0D77E82711C5A700B9831E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		7B0D77EF2711D1D200B9831E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7EA725E106B25A7550960F51 /* Pods_SentimentAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0747A2F21217305B31F447 /* Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysis-SentimentAnalysisTests/Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F60174553C529D000A92F0F /* Pods-SentimentAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysisTests/Pods-SentimentAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
 		C068CCA86519A38FC8CE004F /* Pods-SentimentAnalysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysis.debug.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysis/Pods-SentimentAnalysis.debug.xcconfig"; sourceTree = "<group>"; };
-		E479E0B751E0B82DD024D17D /* Pods_SentimentAnalysisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalysisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,15 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80510FF85B813006EA517823 /* Pods_SentimentAnalysisTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0D77862710B12700B9831E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0711EA11727763C5B3DDA49 /* Pods_SentimentAnalysisUITests.framework in Frameworks */,
+				FB2874EE41D30576E5868504 /* Pods_SentimentAnalysisTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +120,9 @@
 				3CD25C4C3929F707A18415C1 /* Pods-SentimentAnalysis.release.xcconfig */,
 				76892EE8C57A7D7F839CA2E7 /* Pods-SentimentAnalysisTests.debug.xcconfig */,
 				8F60174553C529D000A92F0F /* Pods-SentimentAnalysisTests.release.xcconfig */,
-				5BA0F5653BB7035449635F70 /* Pods-SentimentAnalysisUITests.debug.xcconfig */,
-				0CD8781AE16301862970A139 /* Pods-SentimentAnalysisUITests.release.xcconfig */,
+				2E227A707C6F6C6131D0A0FB /* Pods-SentimentAnalysis-SentimentAnalysisTests.debug.xcconfig */,
+				7F0747A2F21217305B31F447 /* Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -123,8 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				7EA725E106B25A7550960F51 /* Pods_SentimentAnalysis.framework */,
-				3542CF2CDD60315B1C18C43C /* Pods_SentimentAnalysisTests.framework */,
-				E479E0B751E0B82DD024D17D /* Pods_SentimentAnalysisUITests.framework */,
+				047D243BFE1E7F28E0145C46 /* Pods_SentimentAnalysisTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,7 +140,6 @@
 			children = (
 				7B0D776B2710B12500B9831E /* SentimentAnalysis */,
 				7B0D77822710B12700B9831E /* SentimentAnalysisTests */,
-				7B0D778C2710B12700B9831E /* SentimentAnalysisUITests */,
 				7B0D776A2710B12500B9831E /* Products */,
 				395386AD0F6809C4F3674825 /* Pods */,
 				6DB4EF892F9D8EE7309794B5 /* Frameworks */,
@@ -146,7 +151,6 @@
 			children = (
 				7B0D77692710B12500B9831E /* SentimentAnalysis.app */,
 				7B0D777F2710B12700B9831E /* SentimentAnalysisTests.xctest */,
-				7B0D77892710B12700B9831E /* SentimentAnalysisUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,18 +167,10 @@
 		7B0D77822710B12700B9831E /* SentimentAnalysisTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B0D77832710B12700B9831E /* SentimentAnalysisTests.swift */,
+				7B0D77E32711B9FE00B9831E /* UseCase */,
+				7B0D77E02711A4CF00B9831E /* Repository */,
 			);
 			path = SentimentAnalysisTests;
-			sourceTree = "<group>";
-		};
-		7B0D778C2710B12700B9831E /* SentimentAnalysisUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7B0D778D2710B12700B9831E /* SentimentAnalysisUITests.swift */,
-				7B0D778F2710B12700B9831E /* SentimentAnalysisUITestsLaunchTests.swift */,
-			);
-			path = SentimentAnalysisUITests;
 			sourceTree = "<group>";
 		};
 		7B0D779C2710B16400B9831E /* Classes */ = {
@@ -182,6 +178,7 @@
 			children = (
 				7B0D77A92710B93900B9831E /* AppStart */,
 				7B0D77AA2710BA1200B9831E /* Global */,
+				7B0D77C52710EB9B00B9831E /* Model */,
 				7B0D77BC2710C9DE00B9831E /* Networking */,
 				7B0D77BD2710C9F300B9831E /* Repository */,
 				7B0D77BF2710CA2000B9831E /* Scene */,
@@ -205,6 +202,8 @@
 		7B0D779F2710B25400B9831E /* StubbedResponses */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77DD2711A3BA00B9831E /* getTweetsByUserId.json */,
+				7B0D77DC2711A3BA00B9831E /* getUserByUsername.json */,
 			);
 			path = StubbedResponses;
 			sourceTree = "<group>";
@@ -212,7 +211,7 @@
 		7B0D77A02710B26000B9831E /* i18n */ = {
 			isa = PBXGroup;
 			children = (
-				7B0D77A52710B2A300B9831E /* Localizabble.strings */,
+				7B0D77F02711D1D200B9831E /* Localizable.strings */,
 			);
 			path = i18n;
 			sourceTree = "<group>";
@@ -221,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				7B0D776C2710B12500B9831E /* AppDelegate.swift */,
-				7B0D776E2710B12500B9831E /* SceneDelegate.swift */,
 				7B0D77772710B12700B9831E /* LaunchScreen.storyboard */,
 			);
 			path = AppStart;
@@ -259,6 +257,10 @@
 		7B0D77BB2710C9AE00B9831E /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77D42711A07900B9831E /* RepositoryAssembly.swift */,
+				7B0D77D62711A0D400B9831E /* UseCaseAssembly.swift */,
+				7B0D77D82711A11E00B9831E /* ViewModelAssembly.swift */,
+				7B0D77DA2711A16400B9831E /* ViewControllerAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -266,6 +268,7 @@
 		7B0D77BC2710C9DE00B9831E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77C82710ECEB00B9831E /* TwitterApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 		7B0D77BD2710C9F300B9831E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77CE2710F4A400B9831E /* TwitterRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -280,6 +284,7 @@
 		7B0D77BE2710CA0600B9831E /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77D02710F67500B9831E /* GetUserByUsernameUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -297,6 +302,8 @@
 		7B0D77C02710CA8500B9831E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77E62711BF9900B9831E /* BaseViewController.swift */,
+				7B0D77E82711C5A700B9831E /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -305,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77702710B12500B9831E /* SearchUserViewController.swift */,
+				7B0D77D22710F90900B9831E /* SearchUserViewModel.swift */,
 			);
 			path = SearchUser;
 			sourceTree = "<group>";
@@ -315,6 +323,32 @@
 				7B0D77C32710CB6300B9831E /* TweetsViewController.swift */,
 			);
 			path = Tweets;
+			sourceTree = "<group>";
+		};
+		7B0D77C52710EB9B00B9831E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D77C62710EBB600B9831E /* User.swift */,
+				7B0D77CA2710EE0500B9831E /* Tweet.swift */,
+				7B0D77CC2710EE7F00B9831E /* Sentiment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B0D77E02711A4CF00B9831E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D77E12711A4FB00B9831E /* TwitterRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7B0D77E32711B9FE00B9831E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D77E42711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +362,7 @@
 				7B0D77652710B12500B9831E /* Sources */,
 				7B0D77662710B12500B9831E /* Frameworks */,
 				7B0D77672710B12500B9831E /* Resources */,
+				3AA34179A18AEF6B53F9A5CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,26 +393,6 @@
 			productReference = 7B0D777F2710B12700B9831E /* SentimentAnalysisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7B0D77882710B12700B9831E /* SentimentAnalysisUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B0D77992710B12700B9831E /* Build configuration list for PBXNativeTarget "SentimentAnalysisUITests" */;
-			buildPhases = (
-				ECC275BF72993888E0E5A244 /* [CP] Check Pods Manifest.lock */,
-				7B0D77852710B12700B9831E /* Sources */,
-				7B0D77862710B12700B9831E /* Frameworks */,
-				7B0D77872710B12700B9831E /* Resources */,
-				57CED2F6636404FB19A5F430 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B0D778B2710B12700B9831E /* PBXTargetDependency */,
-			);
-			name = SentimentAnalysisUITests;
-			productName = SentimentAnalysisUITests;
-			productReference = 7B0D77892710B12700B9831E /* SentimentAnalysisUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -392,10 +407,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					7B0D777E2710B12700B9831E = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 7B0D77682710B12500B9831E;
-					};
-					7B0D77882710B12700B9831E = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 7B0D77682710B12500B9831E;
 					};
@@ -416,7 +427,6 @@
 			targets = (
 				7B0D77682710B12500B9831E /* SentimentAnalysis */,
 				7B0D777E2710B12700B9831E /* SentimentAnalysisTests */,
-				7B0D77882710B12700B9831E /* SentimentAnalysisUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -426,8 +436,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0D77A32710B2A300B9831E /* Localizabble.strings in Resources */,
+				7B0D77DE2711A3BA00B9831E /* getUserByUsername.json in Resources */,
+				7B0D77EE2711D1D200B9831E /* Localizable.strings in Resources */,
 				7B0D77792710B12700B9831E /* LaunchScreen.storyboard in Resources */,
+				7B0D77DF2711A3BA00B9831E /* getTweetsByUserId.json in Resources */,
 				7B0D77762710B12700B9831E /* Assets.xcassets in Resources */,
 				7B0D77A82710B6C300B9831E /* Configuration.plist in Resources */,
 			);
@@ -440,31 +452,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B0D77872710B12700B9831E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57CED2F6636404FB19A5F430 /* [CP] Embed Pods Frameworks */ = {
+		3AA34179A18AEF6B53F9A5CA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SentimentAnalysisUITests/Pods-SentimentAnalysisUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SentimentAnalysis/Pods-SentimentAnalysis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SentimentAnalysisUITests/Pods-SentimentAnalysisUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SentimentAnalysis/Pods-SentimentAnalysis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SentimentAnalysisUITests/Pods-SentimentAnalysisUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SentimentAnalysis/Pods-SentimentAnalysis-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87919A5E5BA1634ACC26D0D8 /* [CP] Check Pods Manifest.lock */ = {
@@ -528,28 +533,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ECC275BF72993888E0E5A244 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SentimentAnalysisUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -557,14 +540,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0D77DB2711A16400B9831E /* ViewControllerAssembly.swift in Sources */,
 				7B0D77AF2710BA6600B9831E /* Configs.swift in Sources */,
 				7B0D77B62710BC5100B9831E /* MainCoordinator.swift in Sources */,
+				7B0D77CD2710EE7F00B9831E /* Sentiment.swift in Sources */,
+				7B0D77D52711A07900B9831E /* RepositoryAssembly.swift in Sources */,
 				7B0D77C42710CB6300B9831E /* TweetsViewController.swift in Sources */,
+				7B0D77CB2710EE0500B9831E /* Tweet.swift in Sources */,
+				7B0D77D32710F90900B9831E /* SearchUserViewModel.swift in Sources */,
+				7B0D77CF2710F4A400B9831E /* TwitterRepository.swift in Sources */,
+				7B0D77D72711A0D400B9831E /* UseCaseAssembly.swift in Sources */,
+				7B0D77C92710ECEB00B9831E /* TwitterApi.swift in Sources */,
 				7B0D77AD2710BA4700B9831E /* ConfigurationManager.swift in Sources */,
 				7B0D77712710B12500B9831E /* SearchUserViewController.swift in Sources */,
+				7B0D77D92711A11E00B9831E /* ViewModelAssembly.swift in Sources */,
 				7B0D776D2710B12500B9831E /* AppDelegate.swift in Sources */,
-				7B0D776F2710B12500B9831E /* SceneDelegate.swift in Sources */,
+				7B0D77D12710F67500B9831E /* GetUserByUsernameUseCase.swift in Sources */,
+				7B0D77E72711BF9900B9831E /* BaseViewController.swift in Sources */,
+				7B0D77E92711C5A700B9831E /* BaseViewModel.swift in Sources */,
 				7B0D77B22710BC1400B9831E /* ApplicationCoordinator.swift in Sources */,
+				7B0D77C72710EBB600B9831E /* User.swift in Sources */,
 				7B0D77B42710BC3400B9831E /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,16 +568,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0D77842710B12700B9831E /* SentimentAnalysisTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B0D77852710B12700B9831E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B0D77902710B12700B9831E /* SentimentAnalysisUITestsLaunchTests.swift in Sources */,
-				7B0D778E2710B12700B9831E /* SentimentAnalysisUITests.swift in Sources */,
+				7B0D77E52711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift in Sources */,
+				7B0D77E22711A4FB00B9831E /* TwitterRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +580,6 @@
 			isa = PBXTargetDependency;
 			target = 7B0D77682710B12500B9831E /* SentimentAnalysis */;
 			targetProxy = 7B0D77802710B12700B9831E /* PBXContainerItemProxy */;
-		};
-		7B0D778B2710B12700B9831E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B0D77682710B12500B9831E /* SentimentAnalysis */;
-			targetProxy = 7B0D778A2710B12700B9831E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -610,12 +592,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		7B0D77A52710B2A300B9831E /* Localizabble.strings */ = {
+		7B0D77F02711D1D200B9831E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7B0D77A42710B2A300B9831E /* en */,
+				7B0D77EF2711D1D200B9831E /* en */,
 			);
-			name = Localizabble.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -625,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -686,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -845,54 +829,6 @@
 			};
 			name = Release;
 		};
-		7B0D779A2710B12700B9831E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BA0F5653BB7035449635F70 /* Pods-SentimentAnalysisUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R75AV6RCZC;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.jtarini.SentimentAnalysisUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SentimentAnalysis;
-			};
-			name = Debug;
-		};
-		7B0D779B2710B12700B9831E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CD8781AE16301862970A139 /* Pods-SentimentAnalysisUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R75AV6RCZC;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.jtarini.SentimentAnalysisUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SentimentAnalysis;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -919,15 +855,6 @@
 			buildConfigurations = (
 				7B0D77972710B12700B9831E /* Debug */,
 				7B0D77982710B12700B9831E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B0D77992710B12700B9831E /* Build configuration list for PBXNativeTarget "SentimentAnalysisUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B0D779A2710B12700B9831E /* Debug */,
-				7B0D779B2710B12700B9831E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

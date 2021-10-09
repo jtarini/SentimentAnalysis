@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SentimentAnalysis
+
+  Created by Juliano Tarini on 09/10/21.
+  
+*/
+
+// General
+"general.error.message" = "An unexpected error has occured!";
+
+// Search User
+"search.user.not.found.message" = "Could not find user with this username!";

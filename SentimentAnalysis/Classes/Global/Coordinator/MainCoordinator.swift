@@ -5,11 +5,20 @@
 //  Created by Juliano Tarini on 08/10/21.
 //
 
-import UIKit
+import Swinject
 
 class MainCoordinator: Coordinator {
   
   private let navigationController: UINavigationController
+  
+  let container: Container = {
+    let container = Container()
+    
+    let assembler = Assembler(container: container)
+    assembler.apply(assemblies: [RepositoryAssembly(), UseCaseAssembly(), ViewModelAssembly(), ViewControllerAssembly()])
+    
+    return container
+  }()
   
   init(navigationController: UINavigationController = UINavigationController()) {
     self.navigationController = navigationController
@@ -20,17 +29,9 @@ class MainCoordinator: Coordinator {
   }
   
   func showSearchUserScreenScene() {
-    let vc = SearchUserViewController()
-    //vc.presenter.coordinator = self
+    let controller = container.resolve(SearchUserViewController.self)
     
-    navigationController.pushViewController(vc, animated: true)
-  }
-  
-  func showTweetsScreenScene() {
-    let vc = TweetsViewController()
-    //vc.presenter.coordinator = self
-    
-    navigationController.pushViewController(vc, animated: true)
+    navigationController.pushViewController(controller!, animated: true)
   }
   
   func back() {
