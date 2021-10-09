@@ -15,6 +15,13 @@ class ViewModelAssembly: Assembly {
       viewModel.getUserByUsernameUseCase = r.resolve(GetUserByUsernameUseCase.self)
       return viewModel
     }.inObjectScope(.container)
+    
+    container.register(TweetsViewModel.self) { r in
+      let viewModel = TweetsViewModel()
+      viewModel.getTweetsByUserIdUseCase = r.resolve(GetTweetsByUserIdUseCase.self)
+      viewModel.getSentimentByTextUseCase = r.resolve(GetSentimentByTextUseCase.self)
+      return viewModel
+    }.inObjectScope(.container)
   }
   
 }

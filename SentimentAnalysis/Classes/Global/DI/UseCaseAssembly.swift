@@ -13,6 +13,14 @@ class UseCaseAssembly: Assembly {
     container.register(GetUserByUsernameUseCase.self) { r in
       GetUserByUsernameUseCase(r.resolve(TwitterRepository.self)!)
     }.inObjectScope(.container)
+    
+    container.register(GetTweetsByUserIdUseCase.self) { r in
+      GetTweetsByUserIdUseCase(r.resolve(TwitterRepository.self)!)
+    }.inObjectScope(.container)
+    
+    container.register(GetSentimentByTextUseCase.self) { r in
+      GetSentimentByTextUseCase(r.resolve(GoogleRepository.self)!)
+    }.inObjectScope(.container)
   }
   
 }

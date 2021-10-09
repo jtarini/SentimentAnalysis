@@ -12,6 +12,9 @@ class RepositoryAssembly: Assembly {
   func assemble(container: Container) {
     container.register(TwitterRepository.self) { _ in TwitterRepository() }
       .inObjectScope(.container)
+    
+    container.register(GoogleRepository.self) { _ in GoogleRepository() }
+      .inObjectScope(.container)
   }
   
 }

@@ -36,6 +36,15 @@
 		7B0D77E72711BF9900B9831E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77E62711BF9900B9831E /* BaseViewController.swift */; };
 		7B0D77E92711C5A700B9831E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77E82711C5A700B9831E /* BaseViewModel.swift */; };
 		7B0D77EE2711D1D200B9831E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77F02711D1D200B9831E /* Localizable.strings */; };
+		7B0D77F22711F4A900B9831E /* GoogleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77F12711F4A900B9831E /* GoogleApi.swift */; };
+		7B0D77F42711F90700B9831E /* GoogleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77F32711F90700B9831E /* GoogleRepository.swift */; };
+		7B0D77F62711F9EA00B9831E /* GetSentimentByTextUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77F52711F9EA00B9831E /* GetSentimentByTextUseCase.swift */; };
+		7B0D77F82711FAB600B9831E /* TweetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77F72711FAB600B9831E /* TweetsViewModel.swift */; };
+		7B0D77FA2712016400B9831E /* GetTweetsByUserIdUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77F92712016400B9831E /* GetTweetsByUserIdUseCase.swift */; };
+		7B0D77FC271206F100B9831E /* GoogleRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77FB271206F100B9831E /* GoogleRepositoryTests.swift */; };
+		7B0D77FE271207BF00B9831E /* getSentimentByText.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D77FD271207BF00B9831E /* getSentimentByText.json */; };
+		7B0D78002712085800B9831E /* GetTweetsByUserIdUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D77FF2712085800B9831E /* GetTweetsByUserIdUseCaseTests.swift */; };
+		7B0D78022712098C00B9831E /* GetSentimentByTextUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D78012712098C00B9831E /* GetSentimentByTextUseCaseTests.swift */; };
 		9CC546372BFA8D382D66E3E1 /* Pods_SentimentAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA725E106B25A7550960F51 /* Pods_SentimentAnalysis.framework */; };
 		FB2874EE41D30576E5868504 /* Pods_SentimentAnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047D243BFE1E7F28E0145C46 /* Pods_SentimentAnalysisTests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +96,15 @@
 		7B0D77E62711BF9900B9831E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7B0D77E82711C5A700B9831E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7B0D77EF2711D1D200B9831E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B0D77F12711F4A900B9831E /* GoogleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleApi.swift; sourceTree = "<group>"; };
+		7B0D77F32711F90700B9831E /* GoogleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleRepository.swift; sourceTree = "<group>"; };
+		7B0D77F52711F9EA00B9831E /* GetSentimentByTextUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSentimentByTextUseCase.swift; sourceTree = "<group>"; };
+		7B0D77F72711FAB600B9831E /* TweetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsViewModel.swift; sourceTree = "<group>"; };
+		7B0D77F92712016400B9831E /* GetTweetsByUserIdUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTweetsByUserIdUseCase.swift; sourceTree = "<group>"; };
+		7B0D77FB271206F100B9831E /* GoogleRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleRepositoryTests.swift; sourceTree = "<group>"; };
+		7B0D77FD271207BF00B9831E /* getSentimentByText.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getSentimentByText.json; sourceTree = "<group>"; };
+		7B0D77FF2712085800B9831E /* GetTweetsByUserIdUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTweetsByUserIdUseCaseTests.swift; sourceTree = "<group>"; };
+		7B0D78012712098C00B9831E /* GetSentimentByTextUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSentimentByTextUseCaseTests.swift; sourceTree = "<group>"; };
 		7EA725E106B25A7550960F51 /* Pods_SentimentAnalysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SentimentAnalysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0747A2F21217305B31F447 /* Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysis-SentimentAnalysisTests/Pods-SentimentAnalysis-SentimentAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F60174553C529D000A92F0F /* Pods-SentimentAnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SentimentAnalysisTests.release.xcconfig"; path = "Target Support Files/Pods-SentimentAnalysisTests/Pods-SentimentAnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +220,7 @@
 		7B0D779F2710B25400B9831E /* StubbedResponses */ = {
 			isa = PBXGroup;
 			children = (
+				7B0D77FD271207BF00B9831E /* getSentimentByText.json */,
 				7B0D77DD2711A3BA00B9831E /* getTweetsByUserId.json */,
 				7B0D77DC2711A3BA00B9831E /* getUserByUsername.json */,
 			);
@@ -269,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77C82710ECEB00B9831E /* TwitterApi.swift */,
+				7B0D77F12711F4A900B9831E /* GoogleApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -277,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77CE2710F4A400B9831E /* TwitterRepository.swift */,
+				7B0D77F32711F90700B9831E /* GoogleRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -285,6 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77D02710F67500B9831E /* GetUserByUsernameUseCase.swift */,
+				7B0D77F52711F9EA00B9831E /* GetSentimentByTextUseCase.swift */,
+				7B0D77F92712016400B9831E /* GetTweetsByUserIdUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -321,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77C32710CB6300B9831E /* TweetsViewController.swift */,
+				7B0D77F72711FAB600B9831E /* TweetsViewModel.swift */,
 			);
 			path = Tweets;
 			sourceTree = "<group>";
@@ -339,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77E12711A4FB00B9831E /* TwitterRepositoryTests.swift */,
+				7B0D77FB271206F100B9831E /* GoogleRepositoryTests.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -347,6 +372,8 @@
 			isa = PBXGroup;
 			children = (
 				7B0D77E42711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift */,
+				7B0D77FF2712085800B9831E /* GetTweetsByUserIdUseCaseTests.swift */,
+				7B0D78012712098C00B9831E /* GetSentimentByTextUseCaseTests.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -437,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B0D77DE2711A3BA00B9831E /* getUserByUsername.json in Resources */,
+				7B0D77FE271207BF00B9831E /* getSentimentByText.json in Resources */,
 				7B0D77EE2711D1D200B9831E /* Localizable.strings in Resources */,
 				7B0D77792710B12700B9831E /* LaunchScreen.storyboard in Resources */,
 				7B0D77DF2711A3BA00B9831E /* getTweetsByUserId.json in Resources */,
@@ -542,6 +570,7 @@
 			files = (
 				7B0D77DB2711A16400B9831E /* ViewControllerAssembly.swift in Sources */,
 				7B0D77AF2710BA6600B9831E /* Configs.swift in Sources */,
+				7B0D77F82711FAB600B9831E /* TweetsViewModel.swift in Sources */,
 				7B0D77B62710BC5100B9831E /* MainCoordinator.swift in Sources */,
 				7B0D77CD2710EE7F00B9831E /* Sentiment.swift in Sources */,
 				7B0D77D52711A07900B9831E /* RepositoryAssembly.swift in Sources */,
@@ -550,14 +579,18 @@
 				7B0D77D32710F90900B9831E /* SearchUserViewModel.swift in Sources */,
 				7B0D77CF2710F4A400B9831E /* TwitterRepository.swift in Sources */,
 				7B0D77D72711A0D400B9831E /* UseCaseAssembly.swift in Sources */,
+				7B0D77FA2712016400B9831E /* GetTweetsByUserIdUseCase.swift in Sources */,
+				7B0D77F62711F9EA00B9831E /* GetSentimentByTextUseCase.swift in Sources */,
 				7B0D77C92710ECEB00B9831E /* TwitterApi.swift in Sources */,
 				7B0D77AD2710BA4700B9831E /* ConfigurationManager.swift in Sources */,
 				7B0D77712710B12500B9831E /* SearchUserViewController.swift in Sources */,
 				7B0D77D92711A11E00B9831E /* ViewModelAssembly.swift in Sources */,
 				7B0D776D2710B12500B9831E /* AppDelegate.swift in Sources */,
+				7B0D77F22711F4A900B9831E /* GoogleApi.swift in Sources */,
 				7B0D77D12710F67500B9831E /* GetUserByUsernameUseCase.swift in Sources */,
 				7B0D77E72711BF9900B9831E /* BaseViewController.swift in Sources */,
 				7B0D77E92711C5A700B9831E /* BaseViewModel.swift in Sources */,
+				7B0D77F42711F90700B9831E /* GoogleRepository.swift in Sources */,
 				7B0D77B22710BC1400B9831E /* ApplicationCoordinator.swift in Sources */,
 				7B0D77C72710EBB600B9831E /* User.swift in Sources */,
 				7B0D77B42710BC3400B9831E /* Coordinator.swift in Sources */,
@@ -568,7 +601,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0D78022712098C00B9831E /* GetSentimentByTextUseCaseTests.swift in Sources */,
 				7B0D77E52711BA4300B9831E /* GetUserByUsernameUseCaseTests.swift in Sources */,
+				7B0D78002712085800B9831E /* GetTweetsByUserIdUseCaseTests.swift in Sources */,
+				7B0D77FC271206F100B9831E /* GoogleRepositoryTests.swift in Sources */,
 				7B0D77E22711A4FB00B9831E /* TwitterRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

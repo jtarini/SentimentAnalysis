@@ -13,12 +13,7 @@ class SearchUserViewModel: BaseViewModel {
   var getUserByUsernameUseCase: GetUserByUsernameUseCase!
   var coordinator: MainCoordinator!
   
-  private let _user = BehaviorRelay<User?>(value: nil)
   private let _userNotFound = BehaviorRelay<Bool>(value: false)
-  
-  var user: Driver<User?> {
-    return _user.asDriver()
-  }
   
   var userNotFound: Driver<Bool> {
      return _userNotFound.asDriver()
@@ -29,7 +24,7 @@ class SearchUserViewModel: BaseViewModel {
       .subscribe { event in
         switch event {
           case .success(let user):
-            self._user.accept(user)
+            self.coordinator.showTweetsScreenScene(userId: user.id)
             self._error.accept(nil)
           case .error(let error):
             let moyaError: MoyaError? = error as? MoyaError

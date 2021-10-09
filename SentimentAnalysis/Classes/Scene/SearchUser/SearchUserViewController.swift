@@ -22,13 +22,7 @@ class SearchUserViewController: BaseViewController<SearchUserViewModel> {
   
   // MARK: - Internal functions
   
-  func setupBindings() {
-    viewModel.user.drive(onNext: { (_user) in
-      if let user = _user {
-        print(user.id)
-      }
-    }).disposed(by: disposeBag)
-    
+  func setupBindings() {    
     viewModel.userNotFound.drive(onNext: { (userNotFound) in
       if userNotFound {
         let banner = Banner(title: NSLocalizedString("search.user.not.found.message", comment: ""), subtitle: "", image: nil, backgroundColor: .orange)

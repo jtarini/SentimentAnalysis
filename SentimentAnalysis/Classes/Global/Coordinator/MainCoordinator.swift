@@ -30,12 +30,16 @@ class MainCoordinator: Coordinator {
   
   func showSearchUserScreenScene() {
     let controller = container.resolve(SearchUserViewController.self)
+    controller?.viewModel.coordinator = self
     
     navigationController.pushViewController(controller!, animated: true)
   }
   
-  func back() {
-    navigationController.popViewController(animated: true)
+  func showTweetsScreenScene(userId: String) {
+    let controller = container.resolve(TweetsViewController.self)
+    controller?.userId = userId
+    
+    navigationController.pushViewController(controller!, animated: true)
   }
   
 }

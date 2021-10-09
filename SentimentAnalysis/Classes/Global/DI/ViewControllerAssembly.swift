@@ -15,6 +15,12 @@ class ViewControllerAssembly: Assembly {
       let controller = SearchUserViewController(viewModel: viewModel)
       return controller
     }.inObjectScope(.container)
+    
+    container.register(TweetsViewController.self) { r in
+      let viewModel = r.resolve(TweetsViewModel.self)!
+      let controller = TweetsViewController(viewModel: viewModel)
+      return controller
+    }.inObjectScope(.container)
   }
   
 }
