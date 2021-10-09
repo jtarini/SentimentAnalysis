@@ -31,7 +31,7 @@ class TweetsViewController: BaseViewController<TweetsViewModel> {
     
     viewModel.sentiment.drive(onNext: { (_sentiment) in
       if let sentiment = _sentiment {
-        print(sentiment.score)
+        print(sentiment.sentimentType)
       }
     }).disposed(by: disposeBag)
     

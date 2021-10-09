@@ -29,16 +29,40 @@ class GetSentimentByTextUseCaseTests: XCTestCase {
     super.tearDown()
   }
   
-  func testExecute() throws {
+  func testExecuteForHappySentimentType() throws {
     // 1. given
     let text = "Enjoy your vacation!"
-    let scoreExpected = 0.9
+    let sentimentTypeExpected = "happy"
     
     // 2. when
     let sentiment = try sut.execute(text).toBlocking().first()
     
     // 3. then
-    XCTAssertEqual(sentiment?.score, scoreExpected)
+    XCTAssertEqual(sentiment?.sentimentType, sentimentTypeExpected)
+  }
+  
+  func testExecuteForNeutralSentimentType() throws {
+    // 1. given
+    let text = "Enjoy your vacation!"
+    let sentimentTypeExpected = "neutral"
+    
+    // 2. when
+    let sentiment = try sut.execute(text).toBlocking().first()
+    
+    // 3. then
+    XCTAssertNotEqual(sentiment?.sentimentType, sentimentTypeExpected)
+  }
+  
+  func testExecuteForSadSentimentType() throws {
+    // 1. given
+    let text = "Enjoy your vacation!"
+    let sentimentTypeExpected = "sad"
+    
+    // 2. when
+    let sentiment = try sut.execute(text).toBlocking().first()
+    
+    // 3. then
+    XCTAssertNotEqual(sentiment?.sentimentType, sentimentTypeExpected)
   }
 
 }

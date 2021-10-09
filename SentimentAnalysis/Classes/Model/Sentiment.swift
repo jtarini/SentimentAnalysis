@@ -10,6 +10,7 @@ import ObjectMapper
 class Sentiment: Mappable {
   
   var score = 0.0
+  var sentimentType = ""
   
   required convenience init?(map: Map) {
     self.init()
