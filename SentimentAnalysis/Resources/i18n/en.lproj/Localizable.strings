@@ -8,6 +8,9 @@
 
 // General
 "general.error.message" = "An unexpected error has occured!";
+"general.loading" = "Loading...";
 
 // Search User
 "search.user.not.found.message" = "Could not find user with this username!";
+"search.user.twitter.username" = "Twitter username";
+"search.user.search.tweets" = "Search Tweets";

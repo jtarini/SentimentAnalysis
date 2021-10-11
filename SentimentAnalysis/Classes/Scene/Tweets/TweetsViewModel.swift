@@ -5,6 +5,7 @@
 //  Created by Juliano Tarini on 09/10/21.
 //
 
+import RxSwift
 import RxCocoa
 import Moya
 
@@ -13,12 +14,8 @@ class TweetsViewModel: BaseViewModel {
   var getTweetsByUserIdUseCase: GetTweetsByUserIdUseCase!
   var getSentimentByTextUseCase: GetSentimentByTextUseCase!
   
-  private let _tweets = BehaviorRelay<[Tweet]>(value: [])
+  let tweets = PublishSubject<[Tweet]>()
   private let _sentiment = BehaviorRelay<Sentiment?>(value: nil)
-  
-  var tweets: Driver<[Tweet]> {
-    return _tweets.asDriver()
-  }
   
   var sentiment: Driver<Sentiment?> {
     return _sentiment.asDriver()
@@ -29,7 +26,8 @@ class TweetsViewModel: BaseViewModel {
       .subscribe { event in
         switch event {
           case .success(let tweets):
-            self._tweets.accept(tweets)
+            self.tweets.onNext(tweets)
+            self.tweets.onCompleted()
             self._error.accept(nil)
           case .error(let error):
             self.setError(error)

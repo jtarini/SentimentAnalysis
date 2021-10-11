@@ -7,9 +7,10 @@ inhibit_all_warnings!
 target 'SentimentAnalysis' do
   pod 'Moya-ObjectMapper/RxSwift'
   pod 'Swinject'
-  pod 'DZNEmptyDataSet'
   pod 'RxCocoa'
   pod 'BRYXBanner'
+  pod 'lottie-ios'
+  pod 'SwiftSpinner'
 
   target 'SentimentAnalysisTests' do
     inherit! :search_paths

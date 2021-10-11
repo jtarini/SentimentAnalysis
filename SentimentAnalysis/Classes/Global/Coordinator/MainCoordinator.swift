@@ -15,7 +15,7 @@ class MainCoordinator: Coordinator {
     let container = Container()
     
     let assembler = Assembler(container: container)
-    assembler.apply(assemblies: [RepositoryAssembly(), UseCaseAssembly(), ViewModelAssembly(), ViewControllerAssembly()])
+    assembler.apply(assemblies: [RepositoryAssembly(), UseCaseAssembly()])
     
     return container
   }()
@@ -29,17 +29,22 @@ class MainCoordinator: Coordinator {
   }
   
   func showSearchUserScreenScene() {
-    let controller = container.resolve(SearchUserViewController.self)
-    controller?.viewModel.coordinator = self
+    let viewModel = SearchUserViewModel()
+    viewModel.getUserByUsernameUseCase = container.resolve(GetUserByUsernameUseCase.self)
+    let controller = SearchUserViewController(viewModel: viewModel)
+    controller.viewModel.coordinator = self
     
-    navigationController.pushViewController(controller!, animated: true)
+    navigationController.pushViewController(controller, animated: true)
   }
   
   func showTweetsScreenScene(userId: String) {
-    let controller = container.resolve(TweetsViewController.self)
-    controller?.userId = userId
+    let viewModel = TweetsViewModel()
+    viewModel.getTweetsByUserIdUseCase = container.resolve(GetTweetsByUserIdUseCase.self)
+    viewModel.getSentimentByTextUseCase = container.resolve(GetSentimentByTextUseCase.self)
+    let controller = TweetsViewController(viewModel: viewModel)
+    controller.userId = userId
     
-    navigationController.pushViewController(controller!, animated: true)
+    navigationController.pushViewController(controller, animated: true)
   }
   
 }
