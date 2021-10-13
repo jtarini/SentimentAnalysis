@@ -15,6 +15,10 @@ A aplicação foi desenvolvida utilizando uma arquitetura MVVM-C. As telas foram
 - BRYXBanner para apresentar alerta de mensagens temporárias;
 - RxBlocking para auxílio na camada de testes.
 
+# APIs utilizadas
+- API REST do Twitter (https://developer.twitter.com)
+- API REST do Google Natural Language (https://cloud.google.com/natural-language)
+
 # Instalação
 pod install
 
