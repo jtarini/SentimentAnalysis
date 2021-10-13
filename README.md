@@ -7,7 +7,7 @@ A aplicação foi desenvolvida utilizando uma arquitetura MVVM-C. As telas foram
 - RXSwift para comunicação assíncrona e reativa;
 - Swinject para a injeção de dependências;
 - Moya para a comunicação com as APIs;
-- ObjectMapper para o mapeamento da serialização das respotas das APIs;
+- ObjectMapper para o mapeamento da serialização das respostas das APIs;
 - lottie para animações;
 - SwiftSpinner para loading;
 - BRYXBanner para apresentar alerta de mensagens temporárias;
