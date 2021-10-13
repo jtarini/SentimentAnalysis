@@ -1,27 +1,27 @@
-# SentimentAnalysis
-A aplicação permite a pesquisa de um usuário do Twitter pelo seu username, e caso seja encontrado, apresenta os primeiros tweets mais recentes desse usuário. E apresenta uma possível avaliação de sentimentos em relação a esse tweet, podendo estar sendo classificada em três possíveis sentimentos: triste, neutro e feliz, quando o mesmo for selecionado na lista, sendo mostrado três possíveis emojis para representar esses sentimentos.
+# Ojective
+The application allows a Twitter user to be searched by their username, and if found, displays the most recent tweets from that user. And it presents a possible evaluation of feelings in relation to this tweet, which can be classified into three possible feelings: sad, neutral and happy, when it is selected from the list, showing three possible emojis to represent these feelings.
 
-# Arquitetura e estrutura
-A aplicação foi desenvolvida utilizando uma arquitetura MVVM-C. As telas foram criadas com princípios de View Code. Foi utilizado alguns patterns para alcançar uma arquitetura mais modular, como UseCase e Repository.
+# Architecture and structure
+This sample app to demonstrate some aspect of clean architecture using MVVM-C pattern, RxSwift, dependency injection, unit testing, and some of the best practices used in modern iOS programming using Swift.
 
-# Bibliotecas utilizadas
-- CocoaPods para gerenciamento de dependências;
-- RXSwift para comunicação assíncrona e reativa;
-- Swinject para a injeção de dependências;
-- Moya para a comunicação com as APIs;
-- ObjectMapper para o mapeamento da serialização das respostas das APIs;
-- lottie para animações;
-- SwiftSpinner para loading;
-- BRYXBanner para apresentar alerta de mensagens temporárias;
-- RxBlocking para auxílio na camada de testes.
+# 3rd Party Libraries
+- <code>CocoaPods</code> for dependency management;
+- <code>RXSwift</code> for asynchronous and reactive communication;
+- <code>Swinject</code> for dependency injection;
+- <code>Moya</code> for communicating with APIs;
+- <code>ObjectMapper</code> for mapping the serialization of API responses;
+- <code>lottie-ios</code> for animations;
+- <code>SwiftSpinner</code> for loading;
+- <code>BRYXBanner</code> to display temp messages alert;
+- <code>RxBlocking</code> for help in the testing layer.
 
-# APIs utilizadas
-- API REST do Twitter (https://developer.twitter.com)
-- API REST do Google Natural Language (https://cloud.google.com/natural-language)
+# APIs used
+- API REST from Twitter (https://developer.twitter.com)
+- API REST from Google Natural Language (https://cloud.google.com/natural-language)
 
-# Instalação
-pod install
+# Installation
+Run the <code>pod install</code> command
 
-# Como rodar
-As chaves tanto para a API do Twitter quanto da API do Google ainda se encontram funcionais para testes, portanto é só rodar a aplicação que tudo deverá funcionar.
-Caso não mais funcione, será porque já foi intencionalmente desativado as chaves, sendo necessário atualizá-las dentro de Resources/Configuration.plist
+# How to run
+The keys for both the Twitter API and the Google API are still functional for testing, so just run the application and everything should work.
+If it no longer works, it will be because the keys have already been intentionally disabled, and you need to update them within <code>Resources/Configuration.plist</code>
