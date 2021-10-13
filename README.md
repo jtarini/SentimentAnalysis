@@ -1,5 +1,7 @@
 # SentimentAnalysis
+A aplicação permite a pesquisa de um usuário do Twitter pelo seu username, e caso seja encontrado, apresenta os primeiros tweets mais recentes desse usuário. E apresenta uma possível avaliação de sentimentos em relação a esse tweet, podendo estar sendo classificada em três possíveis sentimentos: triste, neutro e feliz, quando o mesmo for selecionado na lista, sendo mostrado três possíveis emojis para representar esses sentimentos.
 
+# Arquitetura e estrutura
 A aplicação foi desenvolvida utilizando uma arquitetura MVVM-C. As telas foram criadas com princípios de View Code. Foi utilizado alguns patterns para alcançar uma arquitetura mais modular, como UseCase e Repository.
 
 # Bibliotecas utilizadas
